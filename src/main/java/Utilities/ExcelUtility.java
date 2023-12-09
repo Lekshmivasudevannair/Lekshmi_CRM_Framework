@@ -10,6 +10,9 @@ import java.util.Arrays;
 import java.util.List;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import Constants.Constant;
+
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Cell;
@@ -27,7 +30,7 @@ public class ExcelUtility {
 		    public String[][] getData(Method m) throws EncryptedDocumentException, IOException {
 			String excelSheetName=m.getName();
 		        //File f = new File(System.getProperty("user.dir") +"\\src\\test\\resources\\testdata\\CRM_TESTDATA.xlsx");
-		        FileInputStream fis = new FileInputStream(System.getProperty("user.dir") +"\\src\\test\\resources\\testdata\\CRM_TESTDATA.xlsx");
+		        FileInputStream fis = new FileInputStream(Constant.EXCEL_FILE_PATH);
 		        Workbook wb = WorkbookFactory.create(fis);
 		        Sheet sheetName = wb.getSheet(excelSheetName);
 

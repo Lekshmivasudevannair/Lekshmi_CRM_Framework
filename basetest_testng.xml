@@ -7,6 +7,7 @@
     <test name="Test_Chrome">
         <parameter name="Browser" value="chrome" />
         <classes>
+        
              <class name="testcrmproject.LoginOfCrmTest"/>
              <class name="testcrmproject.TestNotes" />
              <class name="testcrmproject.ProfileTest" />
@@ -15,7 +16,8 @@
              <class name="testcrmproject.TestDashboard" />
              <class name="testcrmproject.TestAnnouncements" />
              <class name="testcrmproject.TestEvents" />
-           
+             <class name="testcrmproject.TestTickets"/>
+          
              
         </classes>
     </test>

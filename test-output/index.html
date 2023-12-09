@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcrmproject.TestDashboard" class="method navigator-link" hash-for-method="clockoutData(admin@admin.com, 12345678, remind me )">clockoutData(admin@admin.com, 12345678, remind me )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,12 +118,47 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcrmproject.TestAnnouncements" class="method navigator-link" hash-for-method="announcementData(admin@admin.com, 12345678, Lekshmi Announcement tittle, 2023/12/05, 2023/12/20, All team members)">announcementData(admin@admin.com, 12345678, Lekshmi Announcement tittle, 2023/12/05, 2023/12/20, All team members)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcrmproject.TestClient" class="method navigator-link" hash-for-method="clientData(admin@admin.com, 12345678, orion, kochi1234kochi, )">clientData(admin@admin.com, 12345678, orion, kochi1234kochi, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testcrmproject.TestEvents" class="method navigator-link" hash-for-method="eventData(admin@admin.com, 12345678, Lekshmi event, description for event, 2023/12/05, 2023/12/20, All team me...)">eventData(admin@admin.com, 12345678, Lekshmi event, description for event, 2023/12/05, 2023/12/20, All team me...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testcrmproject.TestEvents" class="method navigator-link" hash-for-method="eventData(admin@admin.com, 12345678, , , , , All team members)">eventData(admin@admin.com, 12345678, , , , , All team members)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcrmproject.LoginOfCrmTest" class="method navigator-link" hash-for-method="loginsuccess(admin@admin.com, 12345678)">loginsuccess(admin@admin.com, 12345678)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcrmproject.TestMessage" class="method navigator-link" hash-for-method="messageData(admin@admin.com, 12345678, keerthana sasi, sending message, Hello world)">messageData(admin@admin.com, 12345678, keerthana sasi, sending message, Hello world)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcrmproject.TestNotes" class="method navigator-link" hash-for-method="notesData(admin@admin.com, 12345678, Lekshmi, note1)">notesData(admin@admin.com, 12345678, Lekshmi, note1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcrmproject.ProfileTest" class="method navigator-link" hash-for-method="profileData(admin@admin.com, 12345678, Lekshmi, Nair, lekshmitest@gmail.com, female)">profileData(admin@admin.com, 12345678, Lekshmi, Nair, lekshmitest@gmail.com, female)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcrmproject.TestTickets" class="method navigator-link" hash-for-method="ticketData(admin@admin.com, 12345678, Lekshmi ticket, ABC, Lekshmi ticket added client abc)">ticketData(admin@admin.com, 12345678, Lekshmi ticket, ABC, Lekshmi ticket added client abc)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -124,6 +173,129 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcrmproject.TestDashboard</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clockoutData(admin@admin.com, 12345678, remind me )">
+                  </a> <!-- clockoutData(admin@admin.com, 12345678, remind me ) -->
+                  <span class="method-name">clockoutData</span>
+                  <span class="parameters">(admin@admin.com, 12345678, remind me )</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=119.0.6045.200)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5bd5918deebe713cbf430ebb079a8e60, isElementDisplayed {id=4C0637DF790A3C94E1C1D03F85B38591_element_70}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57145}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57145/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5bd5918deebe713cbf430ebb079a8e60)] -&gt; xpath: //a[@title=&apos;Clock In&apos;]]
+Session ID: 5bd5918deebe713cbf430ebb079a8e60
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:283)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy15.isDisplayed(Unknown Source)
+	at Utilities.ElementUtilities.isElementDisplayed(ElementUtilities.java:57)
+	at pages.DashBoardOfCrm.checkIfAfterClockoutNoteGivenButtonChangedToClockin(DashBoardOfCrm.java:84)
+	at testcrmproject.TestDashboard.clockoutData(TestDashboard.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcrmproject.ProfileTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="profileData(admin@admin.com, 12345678, Lekshmi, Nair, lekshmitest@gmail.com, female)">
+                  </a> <!-- profileData(admin@admin.com, 12345678, Lekshmi, Nair, lekshmitest@gmail.com, female) -->
+                  <span class="method-name">profileData</span>
+                  <span class="parameters">(admin@admin.com, 12345678, Lekshmi, Nair, lekshmitest@gmail.com, female)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcrmproject.TestAnnouncements</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="announcementData(admin@admin.com, 12345678, Lekshmi Announcement tittle, 2023/12/05, 2023/12/20, All team members)">
+                  </a> <!-- announcementData(admin@admin.com, 12345678, Lekshmi Announcement tittle, 2023/12/05, 2023/12/20, All team members) -->
+                  <span class="method-name">announcementData</span>
+                  <span class="parameters">(admin@admin.com, 12345678, Lekshmi Announcement tittle, 2023/12/05, 2023/12/20, All team members)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcrmproject.TestTickets</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ticketData(admin@admin.com, 12345678, Lekshmi ticket, ABC, Lekshmi ticket added client abc)">
+                  </a> <!-- ticketData(admin@admin.com, 12345678, Lekshmi ticket, ABC, Lekshmi ticket added client abc) -->
+                  <span class="method-name">ticketData</span>
+                  <span class="parameters">(admin@admin.com, 12345678, Lekshmi ticket, ABC, Lekshmi ticket added client abc)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcrmproject.LoginOfCrmTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginsuccess(admin@admin.com, 12345678)">
+                  </a> <!-- loginsuccess(admin@admin.com, 12345678) -->
+                  <span class="method-name">loginsuccess</span>
+                  <span class="parameters">(admin@admin.com, 12345678)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcrmproject.TestNotes</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="notesData(admin@admin.com, 12345678, Lekshmi, note1)">
+                  </a> <!-- notesData(admin@admin.com, 12345678, Lekshmi, note1) -->
+                  <span class="method-name">notesData</span>
+                  <span class="parameters">(admin@admin.com, 12345678, Lekshmi, note1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -148,6 +320,38 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcrmproject.TestClient</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clientData(admin@admin.com, 12345678, orion, kochi1234kochi, )">
+                  </a> <!-- clientData(admin@admin.com, 12345678, orion, kochi1234kochi, ) -->
+                  <span class="method-name">clientData</span>
+                  <span class="parameters">(admin@admin.com, 12345678, orion, kochi1234kochi, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcrmproject.TestMessage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="messageData(admin@admin.com, 12345678, keerthana sasi, sending message, Hello world)">
+                  </a> <!-- messageData(admin@admin.com, 12345678, keerthana sasi, sending message, Hello world) -->
+                  <span class="method-name">messageData</span>
+                  <span class="parameters">(admin@admin.com, 12345678, keerthana sasi, sending message, Hello world)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -161,7 +365,15 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test_Chrome&quot;&gt;
     &lt;parameter name=&quot;Browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;testcrmproject.LoginOfCrmTest&quot;/&gt;
+      &lt;class name=&quot;testcrmproject.TestNotes&quot;/&gt;
+      &lt;class name=&quot;testcrmproject.ProfileTest&quot;/&gt;
+      &lt;class name=&quot;testcrmproject.TestMessage&quot;/&gt;
+      &lt;class name=&quot;testcrmproject.TestClient&quot;/&gt;
+      &lt;class name=&quot;testcrmproject.TestDashboard&quot;/&gt;
+      &lt;class name=&quot;testcrmproject.TestAnnouncements&quot;/&gt;
       &lt;class name=&quot;testcrmproject.TestEvents&quot;/&gt;
+      &lt;class name=&quot;testcrmproject.TestTickets&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test_Chrome --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -175,7 +387,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test_Chrome (1 class)</span>
+                <span class="test-name">Test_Chrome (9 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -201,20 +413,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(10);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'eventData')
-data.setCell(0, 2, 'testcrmproject.TestEvents')
-data.setCell(0, 3, 6348);
+data.setCell(0, 1, 'ticketData')
+data.setCell(0, 2, 'testcrmproject.TestTickets')
+data.setCell(0, 3, 23723);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'eventData')
-data.setCell(1, 2, 'testcrmproject.TestEvents')
-data.setCell(1, 3, 6070);
+data.setCell(1, 1, 'announcementData')
+data.setCell(1, 2, 'testcrmproject.TestAnnouncements')
+data.setCell(1, 3, 6009);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'notesData')
+data.setCell(2, 2, 'testcrmproject.TestNotes')
+data.setCell(2, 3, 5309);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'eventData')
+data.setCell(3, 2, 'testcrmproject.TestEvents')
+data.setCell(3, 3, 4468);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'clientData')
+data.setCell(4, 2, 'testcrmproject.TestClient')
+data.setCell(4, 3, 4392);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'eventData')
+data.setCell(5, 2, 'testcrmproject.TestEvents')
+data.setCell(5, 3, 4327);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'messageData')
+data.setCell(6, 2, 'testcrmproject.TestMessage')
+data.setCell(6, 3, 4191);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'profileData')
+data.setCell(7, 2, 'testcrmproject.ProfileTest')
+data.setCell(7, 3, 4056);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'clockoutData')
+data.setCell(8, 2, 'testcrmproject.TestDashboard')
+data.setCell(8, 3, 3875);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'loginsuccess')
+data.setCell(9, 2, 'testcrmproject.LoginOfCrmTest')
+data.setCell(9, 3, 1211);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -240,30 +484,152 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcrmproject.TestEvents</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testcrmproject.LoginOfCrmTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUpDriverOpenUrl(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <span class="method-name">loginsuccess(admin@admin.com, 12345678)</span>
+                <span class="method-start">3820 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenShotOnFailure([TestResult name=loginsuccess status=SUCCESS method=LoginOfCrmTest.loginsuccess(java.lang.String,jav...)</span>
+                <span class="method-start">5033 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcrmproject.TestNotes</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriverOpenUrl(chrome)</span>
+                <span class="method-start">5926 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">notesData(admin@admin.com, 12345678, Lekshmi, note1)</span>
+                <span class="method-start">8965 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenShotOnFailure([TestResult name=notesData status=SUCCESS method=TestNotes.notesData(java.lang.String,java.lang.Stri...)</span>
+                <span class="method-start">14276 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcrmproject.ProfileTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriverOpenUrl(chrome)</span>
+                <span class="method-start">15150 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">profileData(admin@admin.com, 12345678, Lekshmi, Nair, lekshmitest@gmail.com, female)</span>
+                <span class="method-start">18293 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenShotOnFailure([TestResult name=profileData status=SUCCESS method=ProfileTest.profileData(java.lang.String,java.lan...)</span>
+                <span class="method-start">22350 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcrmproject.TestMessage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriverOpenUrl(chrome)</span>
+                <span class="method-start">23182 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">messageData(admin@admin.com, 12345678, keerthana sasi, sending message, Hello world)</span>
+                <span class="method-start">26082 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenShotOnFailure([TestResult name=messageData status=SUCCESS method=TestMessage.messageData(java.lang.String,java.lan...)</span>
+                <span class="method-start">30274 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcrmproject.TestClient</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriverOpenUrl(chrome)</span>
+                <span class="method-start">31126 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">clientData(admin@admin.com, 12345678, orion, kochi1234kochi, )</span>
+                <span class="method-start">34064 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenShotOnFailure([TestResult name=clientData status=SUCCESS method=TestClient.clientData(java.lang.String,java.lang.S...)</span>
+                <span class="method-start">38457 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcrmproject.TestDashboard</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriverOpenUrl(chrome)</span>
+                <span class="method-start">39333 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">clockoutData(admin@admin.com, 12345678, remind me )</span>
+                <span class="method-start">42375 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenShotOnFailure([TestResult name=clockoutData status=FAILURE method=TestDashboard.clockoutData(java.lang.String,java...)</span>
+                <span class="method-start">46253 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcrmproject.TestAnnouncements</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriverOpenUrl(chrome)</span>
+                <span class="method-start">47339 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">announcementData(admin@admin.com, 12345678, Lekshmi Announcement tittle, 2023/12/05, 2023/12/20, All team members)</span>
+                <span class="method-start">50308 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenShotOnFailure([TestResult name=announcementData status=SUCCESS method=TestAnnouncements.announcementData(java.lang...)</span>
+                <span class="method-start">56318 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcrmproject.TestEvents</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriverOpenUrl(chrome)</span>
+                <span class="method-start">57197 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
                 <span class="method-name">eventData(admin@admin.com, 12345678, Lekshmi event, description for event, 2023/12/05, 2023/12/20, All team me...)</span>
-                <span class="method-start">5134 ms</span>
+                <span class="method-start">60281 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=eventData status=SUCCESS method=TestEvents.eventData(java.lang.String,java.lang.Str...)</span>
-                <span class="method-start">11208 ms</span>
+                <span class="method-start">64750 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUpDriverOpenUrl(chrome)</span>
-                <span class="method-start">11210 ms</span>
+                <span class="method-start">65527 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">eventData(admin@admin.com, 12345678, , , , , All team members)</span>
-                <span class="method-start">15230 ms</span>
+                <span class="method-start">68557 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=eventData status=SUCCESS method=TestEvents.eventData(java.lang.String,java.lang.Str...)</span>
-                <span class="method-start">21581 ms</span>
+                <span class="method-start">72885 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcrmproject.TestTickets</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriverOpenUrl(chrome)</span>
+                <span class="method-start">73728 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ticketData(admin@admin.com, 12345678, Lekshmi ticket, ABC, Lekshmi ticket added client abc)</span>
+                <span class="method-start">76848 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenShotOnFailure([TestResult name=ticketData status=SUCCESS method=TestTickets.ticketData(java.lang.String,java.lang....)</span>
+                <span class="method-start">100572 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

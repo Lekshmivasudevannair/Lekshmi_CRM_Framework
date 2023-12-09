@@ -1,5 +1,7 @@
 package testcrmproject;
 
+import java.awt.AWTException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -19,7 +21,7 @@ public class TestAnnouncements extends TestBase
 
 
 	 @Test(dataProviderClass=ExcelUtility.class, dataProvider="logdata")
-	 public void announcementData(String username,String password,String tittle,String startdate,String enddate,String checkboxText)  
+	 public void announcementData(String username,String password,String tittle,String startdate,String enddate,String checkboxText) throws AWTException, InterruptedException  
 		 {    
 		 objLogin = new LoginOfCrm(driver);
 	     crmDashboard = new DashBoardOfCrm(driver);  // Pass the WebDriver instance to the constructor

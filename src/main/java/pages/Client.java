@@ -132,20 +132,24 @@ public boolean checkIfClientIsPresentInTable(String nameofcompany) {
 		}
 		return false;
 }
-
-
-
-		public void addingClientDetails(String nameofcompany,String companyaddress,String cityname) 
-		{   
-			
-		    this.clickClientIconInDashboard();
-		    this.clickAddClientButton();
-			this.setCompanyName(nameofcompany);
-			this.setAddress(companyaddress);
-			this.setCity(cityname);
-			this.clickSave();
-			this.searchClient(nameofcompany);
-		}
+public void addingClientDetails(String nameofcompany, String companyaddress, String cityname) 
+{
+	 
 		
+	    this.clickClientIconInDashboard();
+	    this.clickAddClientButton();
+		this.setCompanyName(nameofcompany);
+		this.setAddress(companyaddress);
+		this.setCity(cityname);
+		this.clickSave();
+		this.searchClient(nameofcompany);
+	}
+	
 }
+
+
+
+		
+		
+
 

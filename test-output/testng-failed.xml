@@ -4,13 +4,13 @@
   <test thread-count="5" name="Test_Chrome(failed)">
     <parameter name="Browser" value="chrome"/>
     <classes>
-      <class name="testcrmproject.TestEvents">
+      <class name="testcrmproject.TestDashboard">
         <methods>
+          <include name="clockoutData" invocation-numbers="0"/>
           <include name="setUpDriverOpenUrl"/>
-          <include name="eventData" invocation-numbers="0"/>
           <include name="takeScreenShotOnFailure"/>
         </methods>
-      </class> <!-- testcrmproject.TestEvents -->
+      </class> <!-- testcrmproject.TestDashboard -->
     </classes>
   </test> <!-- Test_Chrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->

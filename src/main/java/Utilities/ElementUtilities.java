@@ -121,25 +121,25 @@ public class ElementUtilities {
 	    }
 			//File upload using robot class
 
-				public void FileUploadUsingRobotClass(WebElement element, String path) throws AWTException, InterruptedException
-				{
-					element.click();
-				   StringSelection s = new StringSelection(path);
-				   Toolkit.getDefaultToolkit().getSystemClipboard().setContents(s, null);
-				   Robot r = new Robot();
-				   Thread.sleep(5000);
-				   r.keyPress(KeyEvent.VK_ENTER);
-				   r.keyRelease(KeyEvent.VK_ENTER);
-				   Thread.sleep(5000);
-				   r.keyPress(KeyEvent.VK_CONTROL);
-				   r.keyPress(KeyEvent.VK_V);
-				   Thread.sleep(5000);
-				   r.keyRelease(KeyEvent.VK_CONTROL);
-				   r.keyRelease(KeyEvent.VK_V);
-				   Thread.sleep(5000);
-				   r.keyPress(KeyEvent.VK_ENTER);
-				   r.keyRelease(KeyEvent.VK_ENTER);
-				}
+	    public void FileUploadUsingRobotClass(WebDriver driver, String path) throws AWTException, InterruptedException
+		{
+	    	System.out.println("fileupload start");
+		   StringSelection s = new StringSelection(path);
+		   Toolkit.getDefaultToolkit().getSystemClipboard().setContents(s, null);
+		   Robot r = new Robot();
+		   Thread.sleep(5000);
+		   r.keyPress(KeyEvent.VK_ENTER);
+		   r.keyRelease(KeyEvent.VK_ENTER);
+		   Thread.sleep(5000);
+		   r.keyPress(KeyEvent.VK_CONTROL);
+		   r.keyPress(KeyEvent.VK_V);
+		   Thread.sleep(5000);
+		   r.keyRelease(KeyEvent.VK_CONTROL);
+		   r.keyRelease(KeyEvent.VK_V);
+		   Thread.sleep(5000);
+		   r.keyPress(KeyEvent.VK_ENTER);
+		   r.keyRelease(KeyEvent.VK_ENTER);
+		}
              //gettitle
 				public String getPageTitle(WebDriver driver){
 			        String title=driver.getTitle();
@@ -218,6 +218,10 @@ public class ElementUtilities {
 					
 				}
 			    
+     public void scrollToBottom()
+     {
+    	 
+     }
 	}
 
 

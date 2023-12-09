@@ -73,11 +73,14 @@ public class TestBase {
 
         }
 		
-		/*
-		 * //Quit the WebDriver instance if (driver != null) { driver.quit();
-		 * 
-		 * }
-		 */
+	
+	//Quit the WebDriver instance 
+	
+	 if (driver != null)
+	 { 
+		 driver.quit(); 
+     }
+	 
 				 
      }
 	public String takeScreenShotOnFailure(String name) throws IOException {

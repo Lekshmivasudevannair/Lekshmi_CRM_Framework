@@ -1,5 +1,6 @@
 package pages;
 
+import java.awt.AWTException;
 import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -9,6 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import Constants.Constant;
 import Utilities.ElementUtilities;
 import Utilities.WaitUtilities;
 
@@ -54,6 +56,10 @@ public class Announcements {
 	WebElement delete_announcement;
 	@FindBy(xpath="//div[@class='app-alert-message']")
 	WebElement delete_announcement_alert;
+	@FindBy(xpath="//button//i[@class='fa fa-camera']")
+	WebElement file_upload;
+	
+	
 public void clickAnnouncementIcon()
 {
 	
@@ -150,17 +156,24 @@ public boolean checkIfLastAddedAnnouncementIsDeleted()
 	return false;
 	
 }
-public void addAnnouncements(String tittleText,String startdateText,String enddateText,String checkboxText) 
+
+
+public void addAnnouncements(String tittleText,String startdateText,String enddateText,String checkboxText) throws AWTException, InterruptedException 
  {
 	this.clickAnnouncementIcon();
 	this.clickAddAnnouncementbutton();
 	this.setTittle(tittleText);
 	this.setStartDate(startdateText);
 	this.setEndDate(enddateText);
+	
 	this.setCheckBox(checkboxText);
+	
+	wait.waitForElementToBeVisible(file_upload);
+	elementutil.scrollToElement(file_upload);
 	this.clickSave();
 	this.clickAnnouncementIcon();
 	this.searchIfannouncementIsadded(tittleText);
+	
  }
 
 }
